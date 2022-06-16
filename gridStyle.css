@@ -1,0 +1,81 @@
+body{
+    background-color: #1a1c28;
+}
+
+header {
+    margin: 0em 0;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navi li {
+    padding: 1em;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.navi li:hover{
+    background-color: black;
+    border: 2px solid #05aa42;
+}
+
+.navi a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.navi a:hover {
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "red red red yellow yellow"
+        "red red red yellow yellow"
+        "green green blue blue blue"
+        "green green blue2 blue2 blue2"
+    ;
+    gap: 0.8em;
+
+    width: 70%;
+    margin: 1em auto;
+
+}
+
+div.red{
+    grid-area: red;
+    background-color: #eb5020;
+    width: 100%;
+    height: 42vh;
+}
+div.yellow{
+    grid-area: yellow;
+    background-color: #ffa401;
+    width: 100%;
+    height: 42vh;
+}
+div.green{
+    grid-area: green;
+    background-color: #05aa42;
+    width: 100%;
+    height: 40vh;
+}
+div.blue{
+    grid-area: blue;
+    background-color: #01aefd;
+    width: 100%;
+    height: 20vh;
+}
+div.blue2{
+    grid-area: blue2;
+    background-color: #01aefd;
+    width: 100%;
+    height: 18vh;
+}

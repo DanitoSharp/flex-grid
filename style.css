@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    font-size: 0.9rem;
+    background-color: #f2f2f2;
+    color: white;
+}
+
+header{
+    margin:1em 0;
+}
+
+.navi{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.navi li{
+    padding: 1em;
+    background-color: black;
+    border-radius: 30px;
+    border:1px solid black;
+}
+.navi li:hover {
+    background-color: white;
+    border: 2px solid #05aa42;
+}
+.navi a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.navi a:hover {
+    color: black;
+}
+
+div.container{
+    display: flex;
+    width: 50em;
+    margin: 0 auto;
+}
+
+div.container div{
+    padding: 4em;
+    width: 11em;
+    height: 65vh;
+}
+div.container h2{
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+div.container div p{
+    margin-top: 2em;
+    max-width: 8em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+div.container div button{
+    margin-top: 2em;
+    width: 10em;
+    padding: 1em;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+div.a{
+    background-color: #e28525;
+}
+div.b{
+    background-color: #016972;
+}
+div.c{
+    background-color: #00403f;
+}
+
+#button-a, #button-b{
+    margin-top: 3.35em;
+}
+
+#button-a:hover {
+    background-color:#e28525;
+    cursor:pointer;
+}
+#button-b:hover {
+    background-color:#016972;
+    cursor: pointer;
+}
+#button-c:hover{
+    background-color:#00403f;
+    cursor: pointer;
+}
